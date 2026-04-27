@@ -16,7 +16,7 @@ Requires Unity 2020.1+ (uses `Mesh.AcquireReadOnlyMeshData`, `GetAllBoneWeights`
    - **Output Folder** — where extracted `.asset` meshes, prefabs, and (optionally) FBX files are written. Defaults to `Assets/Mesh`.
    - **Rebuild In Scene** — leave the rebuilt hierarchy as a new GameObject in the scene after extraction.
    - **Save Prefab Asset** — save the rebuilt hierarchy as a `.prefab` in the output folder.
-   - **Export FBX** — also write a `.fbx` of the rebuilt hierarchy. Requires the `com.unity.formats.fbx` package; if it isn't installed, the tool will install it automatically via the Package Manager when you click Extract.
+   - **Export FBX** — also write a `.fbx` of the rebuilt hierarchy. Requires the `com.unity.formats.fbx` package; if it isn't installed, the tool will install it automatically via the Package Manager when you click Extract. NOTE: Having Export FBX toggled on will make the prefab use that fbx not the .asset files
 4. Click **Extract**.
 
 Each run writes to a timestamped subfolder like `Assets/Mesh/run_20260421_143022_MyCharacter/` so runs don't overwrite each other.
